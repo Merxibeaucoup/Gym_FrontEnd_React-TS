@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
   const handleNavItemClick =
     (itemName: string): React.MouseEventHandler<HTMLAnchorElement> =>
-    (event) => {
+    () => {
       if (itemName === "Home") {
         navigate("/");
         console.log(`home clicked`);
