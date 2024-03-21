@@ -1,0 +1,57 @@
+.navbar {
+  z-index: 1000;
+  @include flexBox(row, center, center);
+  margin-top: 1.3rem;
+
+  .wrapper {
+    @include flexBox(row, space-around, center);
+    padding: 1rem 0rem;
+    background-color: $color-creamy;
+    border-radius: 10rem;
+    gap: 20rem;
+    // width: 1200px;
+  }
+
+  .left-nav,
+  .right-nav,
+  .logo {
+    @include flexBox(row, null, center);
+    background-color: $color-creamy;
+    gap: 3rem;
+  }
+
+  a {
+    padding: 1rem;
+    background-color: inherit;
+    // color: $color-white;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+}
+
+.navbar {
+  //   position: relative;
+  z-index: 1000; // Ensure the navbar is above other content
+  //   margin-top: rem;
+
+  &.sticky {
+    position: fixed;
+    background-color: $color-red;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0rem;
+    color: $color-white;
+
+    .red-bg {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+}
+
+/* Add other styles as needed */

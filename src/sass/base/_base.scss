@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #110;
+}
+
+html {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.content {
+  max-width: 100vw;
+  // padding: 0 4rem;
+}
+
+.max-width {
+  width: 1200px;
+}
